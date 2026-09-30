@@ -26,6 +26,7 @@ app.use("/profile",profileRouter)
 app.use("/signin",signinRouter) 
 app.use("/logout",logoutRouter)
 app.use("/orders",orderRouter)
+const PORT = process.env.PORT || 3000;
 
-app.listen(process.env.PORT,()=>{ 
-    console.log(`server is litening on port ${process.env.PORT}`)})
+app.listen(PORT,()=>{ 
+    console.log(`server is litening on port ${PORT}`)})
