@@ -33,8 +33,8 @@ const signin = async (req, res) => {
       .status(200)
       .cookie("token", token, {
         httpOnly: true,
-         secure: false,
-        sameSite: "strict"
+         secure: true,
+        sameSite: "none"
       })
       .json({
         message: "Login successful"
