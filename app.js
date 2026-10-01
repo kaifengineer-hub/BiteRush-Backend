@@ -14,7 +14,7 @@ const cookieParser = require("cookie-parser");
 const app=express();
 app.use(express.json())
 app.use(cors({
-  origin: "https://bite-rush-frontend-beta.vercel.app/",
+  origin: "https://bite-rush-frontend-beta.vercel.app",
   credentials: true
 }));
 app.use(cookieParser());
